@@ -1,0 +1,19 @@
+@mixin desktop {
+    @media  (max-width:  576px){
+        @content;
+
+    }
+}
+@mixin movil {
+    @media   (max-width: 360px){
+        @content;
+
+    }
+}
+
+@mixin gridd{
+    @media  (max-width: 730px){
+        @content;
+
+    }
+}

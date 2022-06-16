@@ -1,0 +1,78 @@
+//mixing
+@mixin degradado {
+    background: rgb(255, 255, 255);
+    box-shadow: 0 8px 32px 0 rgba(15, 24, 156, 0.37);
+    backdrop-filter: blur( 7.5px );
+    -webkit-backdrop-filter: blur( 7.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    
+}
+@mixin tamaño-logo-index{
+    width: 110px;
+    padding: 0px 0px 0px 50px;
+}
+
+@mixin contenido-pagina-texto{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 60px;
+    margin: 50px 80px 50px 80px;
+    background-color: aliceblue;
+    border-radius: 20px;
+}
+@mixin header-pagina-sec {
+    background: rgb(255, 255, 255);
+    box-shadow: 0 8px 32px 0 rgba(15, 24, 156, 0.37);
+    backdrop-filter: blur( 7.5px );
+    -webkit-backdrop-filter: blur( 7.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 ); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    text-align: center;
+    margin: 10px;
+}
+
+@mixin nav{
+    @include degradado();
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include desktop{
+        flex-direction: column;
+    }
+    @include movil{
+        flex-direction: column;
+    }
+    ul{
+        display: flex;
+        list-style: none;
+        font-size: larger;
+        flex-wrap: wrap;
+    }
+    .img__link {
+        @include tamaño-logo-index();
+            @include desktop{
+                padding: 0px;
+            }
+            @include movil{
+                padding: 0px;
+            }
+    }
+    .lista__index{
+        padding: 10px;
+            @include desktop{
+                font-size: small;
+            }
+            @include movil{
+                font-size: 13px;
+            }
+    }
+    .textoinicio{
+        color: #10cbfa;
+        text-decoration: none;
+    }
+}

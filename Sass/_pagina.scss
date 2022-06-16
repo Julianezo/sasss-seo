@@ -1,0 +1,206 @@
+@import "./mixin";
+@import "./_variables.scss";
+@import "./media-queries";
+
+//Pagina Index
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}    
+
+.header__index{
+    @include nav();
+}
+
+.Contenido__pagina{
+    background: $color-fondo;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    .contenidoPagina__texto{
+        @include contenido-pagina-texto();
+        @include desktop{
+            margin: 20px 5px 30px 5px;
+            padding: 10px;
+        }
+        @include movil{
+            margin: 20px 5px 30px 5px;
+            padding: 10px;
+        }
+
+    }
+    .img__contenido{
+    width: 550px;
+    margin-top: 6%;
+    transition: all 400ms; 
+        @include desktop{
+            width: 21rem;
+
+        }
+        @include movil {
+            width: 21rem;
+        }
+    }.img__contenido:hover{
+        transform: $hover-agrandar
+       
+    }
+    .img__telefono{
+        height: 550px;
+        width: 500px;
+        transition: all 400ms;
+        @include desktop{
+            width: 21rem;
+            height: 22rem;
+        }
+        @include movil{
+            width: 21rem;
+            height: 22rem;
+        }
+        
+    }.img__telefono:hover{
+        transform: $hover-agrandar;
+    }
+    
+
+}
+.footer__index{
+    @include degradado();
+    background: rgb(48, 180, 233);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    .imgfooter{
+        width: 30px;
+        margin: 3px;
+    
+    } 
+}
+
+//Ubicacion
+.html__ubicacion{
+    background-color: $color-paginas-secundarias ;
+}
+.gridd__ubicacion{ 
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: center;
+
+    .imagen__logo__ubicacion{
+    width: 250px;
+    margin-bottom: 30px;
+    @include desktop{
+        width: 150px;
+    }
+    }
+    .imagen__ubicacion__local{
+    width: 500px;
+    @include desktop{
+        width: 300px;
+    }
+
+    }
+}
+
+.logoubicacion{   
+     display: flex;
+    justify-content: center;
+  .logos__ubicacion{
+    width: 50px;
+    margin-top: 30px;   
+    }  
+}  
+
+.header__ubicacion{
+    @include nav();
+}
+
+//Informacion
+.html__informacion{
+    background-color:$color-paginas-secundarias;
+
+}
+.header__informacion{
+    @include header-pagina-sec();
+}
+.informacion__texto{
+    @include contenido-pagina-texto();
+}
+
+
+//Historia
+
+.html__historia{
+    background-color: $color-paginas-secundarias;
+}
+
+.header__historia{
+    @include nav();
+    @include tamaño-logo-index();
+    width:50px;
+}  
+
+.Gridd__historia{
+    
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    justify-items: center;
+    justify-content: center;
+    .img__grid__historia{
+        margin: 4px;
+    }
+    .img__historia{
+     @include gridd{
+        height: 100px;
+        width: 100px;
+    }
+    @include desktop{
+        width: 100px;
+    }
+    @include movil{
+        width: 100px;
+    }
+}
+   
+
+}
+
+
+
+//Contacto
+
+.html__contacto{
+    background-color: $color-paginas-secundarias;
+}
+
+.header__contacto{
+    @include header-pagina-sec();
+}
+
+.contacto__contenedor{
+    display: flex;
+    justify-content: center;
+    margin-top: 12%;
+    flex-wrap: wrap;
+    .imagen__contacto{
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+    @include desktop {
+        width: 110px;
+        height: 110px;
+    }
+    @include movil{
+        height: 100px;
+        width: 100px;
+    }
+    }
+      
+}
+
+.imagen__contacto:hover{
+    transform: $hover-agrandar
+}

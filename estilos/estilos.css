@@ -1,0 +1,353 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}    
+
+
+/*index*/
+
+.header__index{   
+    background: rgb(255, 255, 255);
+    box-shadow: 0 8px 32px 0 rgba(15, 24, 156, 0.37);
+    backdrop-filter: blur( 7.5px );
+    -webkit-backdrop-filter: blur( 7.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+     
+}
+.Contenido__pagina{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: linear-gradient(#1ef8db, #1cb5e0);
+}
+.header__index ul{
+    display: flex;
+    list-style: none;
+    font-size: larger;
+    flex-wrap: wrap;
+}
+.lista__index{
+    padding: 10px;    
+}
+.textoinicio{
+    color: #10cbfa;
+    text-decoration: none;
+} 
+
+
+.img__link{
+    width: 140px;
+    padding: 0px 0px 0px 50px;
+}
+
+.contenidoPagina__texto{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 60px;
+    margin: 50px 80px 50px 80px;
+    background-color: aliceblue;
+    border-radius: 20px;
+    
+}
+
+.img__contenido:hover{
+    transform: scale(1.15);
+}
+
+
+.img__contenido{
+    width: 550px;
+    margin-top: 6%;
+    transition: all 400ms;
+}
+
+.img__telefono:hover{
+    transform: scale(1.15);
+}
+.img__telefono{
+    height: 550px;
+    width: 500px;
+    transition: all 400ms;
+    
+}
+
+.imgfooter{
+    width: 30px;
+    margin: 3px;
+
+}
+
+.footer__index{
+    background: rgb(48, 180, 233);
+    box-shadow: 0 8px 32px 0 rgba(15, 24, 156, 0.37);
+    backdrop-filter: blur( 7.5px );
+    -webkit-backdrop-filter: blur( 7.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );  
+    display: flex;
+    justify-content: center;
+    padding: 20px; 
+   
+}
+
+
+/*Contactos css*/
+
+.html__contacto{
+    background-color: aquamarine;
+}
+.header__contacto{   
+    background: rgb(255, 255, 255);
+    box-shadow: 0 8px 32px 0 rgba(15, 24, 156, 0.37);
+    backdrop-filter: blur( 7.5px );
+    -webkit-backdrop-filter: blur( 7.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 ); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    text-align: center;
+    margin: 10px;
+    
+}
+.contacto__contenedor{
+    display: flex;
+    justify-content: center;
+    margin-top: 12%;
+    flex-wrap: wrap;
+}
+.imagen__contacto{
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+    
+}
+.imagen__contacto:hover{
+    transform: scale(1.15);
+}
+
+/*Historia css*/
+
+.html__historia{
+    background-color: aquamarine;
+}
+.header__historia{   
+    background: rgb(255, 255, 255);
+    box-shadow: 0 8px 32px 0 rgba(15, 24, 156, 0.37);
+    backdrop-filter: blur( 7.5px );
+    -webkit-backdrop-filter: blur( 7.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 ); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    text-align: center;
+    margin: 10px;
+    
+}
+.Gridd__historia{
+    
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    justify-items: center;
+    justify-content: center;
+}
+
+.img__grid__historia{
+    margin: 4px;
+}
+
+/*Informacion css*/
+
+.html__informacion{
+    background-color: aquamarine;
+}
+.header__informacion{   
+    background: rgb(255, 255, 255);
+    box-shadow: 0 8px 32px 0 rgba(15, 24, 156, 0.37);
+    backdrop-filter: blur( 7.5px );
+    -webkit-backdrop-filter: blur( 7.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 ); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    text-align: center;
+    margin: 10px;
+    
+}
+.informacion__texto{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 60px;
+    margin: 10% 8% 8% 8%;
+    background-color: aliceblue;
+    border-radius: 20px;
+    
+}
+
+
+/*Ubicacion css*/
+
+.html__ubicacion{
+    background-color: aquamarine;
+}
+.header__ubicacion{   
+    background: rgb(255, 255, 255);
+    box-shadow: 0 8px 32px 0 rgba(15, 24, 156, 0.37);
+    backdrop-filter: blur( 7.5px );
+    -webkit-backdrop-filter: blur( 7.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 ); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    text-align: center;
+    margin: 10px;
+    
+}
+.imagen__logo__ubicacion{
+    width: 250px;
+    margin-bottom: 30px;
+}
+.imagen__ubicacion__local{
+    width: 500px;
+
+}
+.logos__ubicacion{
+    width: 50px;
+    margin-top: 30px;
+    
+   
+}
+.logoubicacion{
+    display: flex;
+    justify-content: center;
+
+}
+
+.gridd__ubicacion{
+display: grid;
+grid-template-columns: auto;
+justify-items: center;
+}
+
+
+
+
+
+
+/*Media index*/
+@media (max-width: 576px){
+    .header__index{
+        flex-direction: column;
+    } 
+    .lista__index{
+        font-size: medium;
+    }
+    .img__link{
+        padding: 0px;
+    }
+    
+
+}
+@media (max-width: 360px){
+    .header__index{
+        flex-direction: column;
+    } 
+    .lista__index{
+        font-size: medium;
+    }
+    .img__link{
+        padding: 0px;
+    }
+    
+
+}
+
+
+/*Media Texto*/
+@media (max-width:  576px){
+    .contenidoPagina__texto{
+        margin: 20px 5px 30px 5px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 360px){
+    .contenidoPagina__texto{
+        margin: 20px 5px 30px 5px;
+        padding: 10px;
+    }
+}
+
+
+/*Media imagenes*/    
+@media (max-width: 730px){
+    .img__historia{
+        width: 120px;
+    }
+
+}
+
+
+@media (max-width: 576px){
+    .contenidoPagina__img{
+        display: flex;
+        justify-content: center;
+    }
+    .img__contenido{
+        width: 21rem;
+    }
+    .img__telefono{
+        width: 21rem;
+        height: 22rem;
+    }
+   .img__historia{
+       width: 100px;
+   }
+   .imagen__logo__ubicacion{
+    width: 150px;
+    }
+    .imagen__ubicacion__local{
+        width: 300px;
+    }
+    .imagen__contacto{
+        width: 110px;
+        height: 110px;
+    }
+    
+    
+}
+
+@media (max-width: 360px){
+    .contenidoPagina__img{
+        display: flex;
+        justify-content: center;
+    }
+    .img__contenido{
+        width: 21rem;
+    }
+    .img__telefono{
+        width: 21rem;
+        height: 22rem;
+    }
+   .img__historia{
+       width: 100px;
+   }
+   .imagen__contacto{
+       height: 100px;
+       width: 100px;
+   }
+
+}
+
